@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      input[type=text], input[type=password]{
+        width: 100%;
+        padding: 10px; /* kutunun içindeki aralığı genişletti. daha güzel duruyor. */
+        border: 1px solid green;
+        border-radius: 10px;
+        color: blue;
+        background-color: gray;
+      }
+      input[type=text]:focus, input[type=password]:focus{
+        background-color: lightblue;
+    
+
+        
+      }
+
+
+        
+    </style>
+  </head>
+
+  <body>
+
+    Adınız: <input type="text">
+    Email: <input type="text">
+    Şifre: <input type="password">
+    <input type="submit">
+    
+
+    
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="orange" position="bottom-right"></script>
+
+  </body>
+</html>

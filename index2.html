@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <style>
+      h1{
+        color: green;
+      }
+
+      div{
+        border:3px solid red;
+        margin-top:300px;
+        margin-left:100px;
+        /* margin ekranın kenarlarından olan uzaklık*/
+        /* yani elementin kendi dışındaki elementlere olan uzaklığı */
+        /* div bodynin içinde. bodyye olan uzaklığını verir */
+        /* divin içinde başka bir div olsa... */
+        /* tam tersleri de oluyor */
+        background-color:gray;
+
+        padding-left: 25px;
+        /* yazıyı kutunun içinden, soldan 25px attı */
+        /* sadece padding: 25px; de diyebilirsin */
+      }
+      /* tablolara özel ama th'a özel değil */
+      table{
+        border-collapse:collapse;/* bir araya getir, açma. demekmiş. */
+        width: 100%;
+      }
+      th, td{/* derste buraya table yazdık ama yazmasak da çalışıyor*/
+        border: 1px solid green;
+      }
+      th{
+        height: 30px;
+      }
+      td{
+        height: 40px;
+        vertical-align: center; /* 'y' ekseni */
+        text-align: left; /* 'x' ekseni */
+        padding-left: 10px;
+      }
+      tr:hover{ /* hover, üzerine geliği zaman yapılacak şey */
+        background-color: red;
+      }
+      tr:nth-child(even){ /* 'even' çift demek*/ /* ilk satırı da sayıcan */
+        background-color: green;
+      }
+      tr:nth-child(odd){
+        background-color: blue;
+      }
+
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <h1 style="background-blend-mode: darken; color: green; font-size: 2em;">: ">test!!!</h1>
+    <br><br>
+    <title>React + TypeScript + Replit</title>
+    <p> Merhaba, Ben Barış!</p>
+    <ul>
+      <li>
+        İstanbul
+        <ul>
+          <li>Yenimahalle</li>
+          <li>Çankaya</li>
+          <li>Çorum</li>
+        </ul>
+      </li>
+      <li>Edirne</li>
+      <li>Ankara</li>
+    </ul>
+    <ol>
+      <li>İstanbul</li>
+      <li>Edirne</li>
+      <li>Ankara</li>
+    </ol>
+  </head>
+  <body>
+    <a href="links.html">Links sayfasına git</a><br>
+    <a href="tables.html">Tables sayfasına git</a><br>
+    <a href="formatting.html">formating</a><br>
+    <a href="layout.html">layout</a><br>
+    <a href="forms.html">forms</a><br>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+
+    <!--
+    This script places a badge on your repl's full-browser view back to your repl's cover
+    page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+    teal, blue, blurple, magenta, pink!
+    -->
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="orange" position="bottom-right"></script>
+
+
+<div>
+  Barış Keskin Barış Keskin Barış Keskin Barış Keskin Barış Keskin Barış Keskin Barış Keskin Barış Keskin 
+</div>
+    <table>
+      <tr>
+        <th>Adı</th>
+        <th>Soyadı</th>
+        <th>Şehir</th>
+      </tr>
+      <tr>
+        <td>Barış</td>
+        <td>Keskin</td>
+        <td>İstanbul</td>
+      </tr>
+      <tr>
+        <td>Mustafa</td>
+        <td>Keskin</td>
+        <td>Kocaeli</td>
+      </tr>
+      <tr>
+        <td>Barış</td>
+        <td>Keskin</td>
+        <td>İstanbul</td>
+      </tr>
+      <tr>
+        <td>Mustafa</td>
+        <td>Keskin</td>
+        <td>Kocaeli</td>
+      </tr>
+      <tr>
+        <td>Barış</td>
+        <td>Keskin</td>
+        <td>İstanbul</td>
+      </tr>
+      <tr>
+        <td>Mustafa</td>
+        <td>Keskin</td>
+        <td>Kocaeli</td>
+      </tr>
+    </table>
+  </body>
+</html>
