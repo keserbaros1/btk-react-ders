@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      input[type=text], input[type=password]{
+      input[type=text], input[type=password],input [type=email]{
         width: 100%;
         padding: 10px; /* kutunun içindeki aralığı genişletti. daha güzel duruyor. */
         border: 1px solid green;
@@ -13,14 +13,28 @@
         color: blue;
         background-color: gray;
       }
-      input[type=text]:focus, input[type=password]:focus{
+      input[type=text]:focus, input[type=password]:focus, input [type=email]:focus{
         background-color: lightblue;
     
 
         
       }
+      .myClass{
+        /* class oluşturduğun zaman . ile başlatman gerekmekte*/
+        /* app.css'de h1 ile ilgili özelleştirme olduğu var ama buradaki özelleştirmeye öncelik verdi*/
+        /* "." koymadığın zaman onları input gibi selector olarak alıyor. onlar zaten var olan classlar. */
+        color: red;
+        background-color: blue; 
+      }
 
+      p.someClass{
+        /* sadece p'de geçerli oluyor.*/
+        /* mesela h1 de kullanmaya kalksan çalışmıyor */
+        color: cyan;
+        background-color: brown; 
+      }
 
+      
         
     </style>
   </head>
@@ -29,8 +43,12 @@
 
     Adınız: <input type="text">
     Email: <input type="text">
+    <!-- Email'in type'ını email yaptığım zaman style'daki verdiğim özelliştirmeler çalışmıyor -->>
     Şifre: <input type="password">
     <input type="submit">
+
+    <h1 class="myClass"> Barış Keskin </h1>
+    <p class="someClass">Bu bir deneme</p>
     
 
     
