@@ -21,7 +21,6 @@
       }
       .myClass{
         /* class oluşturduğun zaman . ile başlatman gerekmekte*/
-        /* app.css'de h1 ile ilgili özelleştirme olduğu var ama buradaki özelleştirmeye öncelik verdi*/
         /* "." koymadığın zaman onları input gibi selector olarak alıyor. onlar zaten var olan classlar. */
         color: red;
         background-color: blue; 
@@ -35,19 +34,23 @@
       }
 
       
-        
+      #email{
+        background-color: black;
+      }
     </style>
   </head>
 
   <body>
 
     Adınız: <input type="text">
-    Email: <input type="text">
-    <!-- Email'in type'ını email yaptığım zaman style'daki verdiğim özelliştirmeler çalışmıyor -->>
+    Email: <input id ="email" type="text">
+    <!-- Email'in type'ını email yaptığım zaman style'daki verdiğim özelliştirmeler çalışmıyor -->
+    <!-- html'de o sayfada, o id'yi bir daha kullanmamamız <yap></yap>na yapılıyor? -->
     Şifre: <input type="password">
     <input type="submit">
 
     <h1 class="myClass"> Barış Keskin </h1>
+    <!-- app.css'de h1 ile ilgili özelleştirme olduğu var ama .myClass'daki özelleştirmeye öncelik verdi -->
     <p class="someClass">Bu bir deneme</p>
     
 
